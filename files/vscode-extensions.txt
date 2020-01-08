@@ -1,0 +1,12 @@
+DavidAnson.vscode-markdownlint
+eamodio.gitlens
+mauve.terraform
+mdickin.markdown-shortcuts
+ms-azuretools.vscode-azurefunctions
+ms-azuretools.vscode-docker
+ms-python.python
+ms-vscode.azure-account
+ms-vscode.csharp
+redhat.vscode-yaml
+vscoss.vscode-ansible
+yzhang.markdown-all-in-one
