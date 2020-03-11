@@ -6,3 +6,13 @@ function vault_config() {
 function force_prune_branches(){
   git branch -vv | grep origin | grep gone | awk '{print $1}'|xargs -L 1 git branch -D
 }
+
+function configure_external_mouse(){
+    defaults write -g com.apple.mouse.scaling 0
+    defaults write -g com.apple.scrollwheel.scaling 0
+}
+
+function unconfigure_external_mouse(){
+    defaults write -g com.apple.mouse.scaling 3
+    defaults write -g com.apple.scrollwheel.scaling 0.4412
+}
