@@ -1,5 +1,6 @@
 DavidAnson.vscode-markdownlint
 eamodio.gitlens
+exiasr.hadolint
 mauve.terraform
 mdickin.markdown-shortcuts
 ms-azuretools.vscode-azurefunctions

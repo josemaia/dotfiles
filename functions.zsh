@@ -8,11 +8,20 @@ function force_prune_branches(){
 }
 
 function configure_external_mouse(){
-    defaults write -g com.apple.mouse.scaling 0
+#    defaults write -g com.apple.mouse.scaling 0 #probably unnecessary
     defaults write -g com.apple.scrollwheel.scaling 0
 }
 
 function unconfigure_external_mouse(){
-    defaults write -g com.apple.mouse.scaling 3
+#    defaults write -g com.apple.mouse.scaling 3
     defaults write -g com.apple.scrollwheel.scaling 0.4412
+}
+
+function sync_changes(){
+    rsync ~/.dotfiles/ ~/GitHubRepos/dotfiles/ -r
+    cd ~/GitHubRepos/dotfiles/
+    git add .
+    git commit -m "Sync changes"
+    git push
+    cd $OLDPWD
 }

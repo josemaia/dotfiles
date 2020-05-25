@@ -4,6 +4,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export VAULT_ADDR='https://vault.itops.criticaltechworks.com' #default addr only
 export EDITOR=nano
-
+export VAGRANT_ALIAS_FILE=~/.dotfiles/files/vagrant-aliases
 #personal info
 export AD_USER='ctw00143'
