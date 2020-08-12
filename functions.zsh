@@ -25,3 +25,7 @@ function sync_changes(){
     git push
     cd $OLDPWD
 }
+
+function role(){
+    export AWS_PROFILE=$1
+}
