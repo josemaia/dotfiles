@@ -29,3 +29,7 @@ function sync_changes(){
 function role(){
     export AWS_PROFILE=$1
 }
+
+function get_self_signed(){
+    openssl req -newkey rsa:2048 -x509 -nodes -keyout self-signed.key -new -out self-signed.crt -subj /CN=$1 -reqexts SAN -extensions SAN -config <(cat /System/Library/OpenSSL/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:$1')) -sha256 -days 3650
+}
