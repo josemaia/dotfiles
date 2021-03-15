@@ -6,7 +6,7 @@ SPACESHIP_ROOT=$ZSH_CUSTOM/themes/spaceship-prompt
 ZSH_THEME="spaceship"
 
 #set the array of all zsh plugins you want to install
-plugins=(git docker battery pip python vagrant)
+plugins=(git docker battery pip python vagrant asdf)
 
 source $ZSH/oh-my-zsh.sh
 
