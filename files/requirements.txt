@@ -22,7 +22,7 @@ pycparser==2.19
 pycryptodome==3.9.4
 pylint==2.4.3
 PySocks==1.7.1
-PyYAML==5.1.2
+PyYAML==5.4
 requests==2.22.0
 six==1.12.0
 streamlink==1.3.0
