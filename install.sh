@@ -39,7 +39,7 @@ for f in "Bold" "Light" "Medium" "Regular" "Retina";
 done;
 
 # Install Barracuda VPN
-wget -q -O /tmp/VPNClient.pkg https://www.jolera.com/files/VPNClient_5.0.2.7_OSX.pkg
+wget -q -O /tmp/VPNClient.pkg https://www.jolera.com/files/VPNClient_5.1.4_OSX.pkg
 sudo installer -pkg /tmp/VPNClient.pkg -target /
 rm /tmp/VPNClient.pkg
 
