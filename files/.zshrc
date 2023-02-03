@@ -17,4 +17,7 @@ then
 fi
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#project-specific
+DAYTONA_INIT=$HOME/bmwgit/dev-tools/etc/shell-init.sh
+[ -f $DAYTONA_INIT ] && . $DAYTONA_INIT
