@@ -25,6 +25,10 @@ pip3 install -r files/requirements.txt
 rm -rf "$HOME/.zshrc"
 ln -s "$HOME/.dotfiles/files/.zshrc" "$HOME/.zshrc"
 
+# Symlink the starsphip configs
+rm -f "$HOME/.config/starship.toml"
+ln -s "$HOME/.dotfiles/files/starship.toml" "$HOME/.config/starship.toml"
+
 # Symlink the Mackup config file to the home directory
 ln -s "$HOME/.dotfiles/files/.mackup.cfg" "$HOME/.mackup.cfg"
 
