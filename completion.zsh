@@ -2,6 +2,6 @@
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
-source /usr/local/etc/bash_completion.d/az
+source /opt/homebrew/etc/bash_completion.d/az
 complete -C '/usr/local/bin/aws_completer' aws
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
