@@ -40,13 +40,6 @@ for f in "Bold" "Light" "Medium" "Regular" "Retina";
   do wget -N -q -P $HOME/Library/Fonts/ https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-$f.ttf;
 done;
 
-# Install VSCode plugins
-plugin_list=""
-while IFS= read -r e; do
-  plugin_list="${plugin_list} --install-extension ${e}"
-done <<< "$(<files/vscode-extensions.txt)"
-sh -c "code $plugin_list"
-
 # Set macOS preferences
 # We will run this last because this will reload the shell
 . files/.macos
