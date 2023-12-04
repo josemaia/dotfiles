@@ -22,3 +22,6 @@ DAYTONA_INIT=$HOME/bmwgit/dev-tools/etc/shell-init.sh
 [ -f $DAYTONA_INIT ] && . $DAYTONA_INIT
 
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
