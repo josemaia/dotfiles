@@ -19,3 +19,7 @@ source /opt/homebrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/z
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# ADDED BY 4WM TEAM
+builtin source /Users/ctw00143/.4wm/functions.sh
+builtin source /Users/ctw00143/.4wm/alias.sh
