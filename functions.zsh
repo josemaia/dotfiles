@@ -17,9 +17,8 @@ function unconfigure_external_mouse(){
     defaults write -g com.apple.scrollwheel.scaling 0.4412
 }
 
-function sync_changes(){
-    rsync ~/.dotfiles/ ~/GitHubRepos/dotfiles/ -r
-    cd ~/GitHubRepos/dotfiles/
+function sync_dotfile_changes(){
+    cd ~/.dotfiles/
     git add .
     git commit -m "Sync changes"
     git push
