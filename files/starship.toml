@@ -1,0 +1,12 @@
+format = '$all$kubernetes$cmd_duration$direnv$env_var$line_break$time$status$os$container$shell$character'
+
+[kubernetes]
+format = '[\($symbol $context\)]($style) '
+disabled = false
+style = 'green'
+symbol = "☸️"
+
+[[kubernetes.contexts]]
+context_pattern = ".*prod.*"
+style = "bg:white fg:red bold"
+symbol = "🇯🇵"
