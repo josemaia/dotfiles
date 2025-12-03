@@ -23,3 +23,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # ADDED BY 4WM TEAM
 builtin source /Users/ctw00143/.4wm/functions.sh
 builtin source /Users/ctw00143/.4wm/alias.sh
+
+# DAYTONA PATH
+DAYTONA_INIT=/Users/ctw00143/daytona/dev-tools/etc/shell-init.sh
+[ -f $DAYTONA_INIT ] && . $DAYTONA_INIT

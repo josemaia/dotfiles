@@ -25,7 +25,7 @@ pip3 install -r files/requirements.txt
 rm -rf "$HOME/.zshrc"
 ln -s "$HOME/.dotfiles/files/.zshrc" "$HOME/.zshrc"
 
-# Symlink the starsphip configs
+# Symlink the starship configs
 rm -f "$HOME/.config/starship.toml"
 ln -s "$HOME/.dotfiles/files/starship.toml" "$HOME/.config/starship.toml"
 
@@ -37,7 +37,7 @@ ln -s "$HOME/.dotfiles/files/Ubuntu.itermcolors" "$HOME/Ubuntu.itermcolors"
 
 #Download useful fonts
 for f in "Bold" "Light" "Medium" "Regular" "Retina";
-  do wget -N -q -P $HOME/Library/Fonts/ https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-$f.ttf;
+  do wget -N -q -P "$HOME/Library/Fonts/" https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-$f.ttf;
 done;
 
 # Set macOS preferences

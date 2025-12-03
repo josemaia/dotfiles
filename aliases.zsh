@@ -1,2 +1,4 @@
 alias yaml2json="python3 -c 'import sys, yaml, json; y=yaml.safe_load(sys.stdin.read()); print(json.dumps(y))'"
 alias python='python3'
+alias k=kubectl
+alias kcx=kubectx
